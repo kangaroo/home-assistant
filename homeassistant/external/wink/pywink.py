@@ -296,6 +296,11 @@ def get_switches():
     return switches
 
 
+def is_token_set():
+    """ Returns if an auth token has been set. """
+    return bool(headers)
+
+
 def set_bearer_token(token):
     global headers
 
